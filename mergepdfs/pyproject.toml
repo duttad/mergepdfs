@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]  # Build system dependencies
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mergepdfs"                    # Your project's name
+version = "0.1.0"                      # Version number
+description = "a tool for inserting, merging, and general manipulation of pages in multiple pdf documents"
+authors = [
+    { name = "Ned Dolphin", email = "dolphin.ned@gmail.com" }
+]
+license = { text = "GNU GPL v3" }             # License
+dependencies = [
+    "typer>=0.15.1",                 # List of dependencies
+    "PyMuPDF>=1.25.1",
+    "typing_extensions>=4.9.0"
+]
+keywords = ["pdf", "merge", "insert", "delete pages"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU GPL v3",
+    "Operating System :: OS Independent"
+]
+
+[project.scripts]
+mergepdfs = "mergepdfs_package.main:app"    # Entry point for CLI commands
