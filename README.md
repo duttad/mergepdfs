@@ -2,23 +2,24 @@
 a tool for inserting, merging, and general manipulation of pages in multiple pdf documents.
 
 ## installation
-navigate to the directory containing the pyproject.toml file and use pip install.
 
 ### to install the latest development in the main branch
 
 #### directly from github
-`$ pip install git+ssh://git@https://github.com/duttad/local-pdftool.git@main`
+`$ pip install git+https://github.com/duttad/mergepdfs.git@main`
 
 #### after cloning the repo
+navigate to the directory containing the pyproject.toml file and use pip install.
+
 `$ pip install .`
 
 ### to install a specific tag
 
 #### directly from github
-`$ pip install git+ssh://git@https://github.com/duttad/local-pdftool.git@<tag>`
+`$ pip install git+https://github.com/duttad/mergepdfs.git@<tag>`
 
 e.g., 
-`$ pip install git+ssh://git@https://github.com/duttad/local-pdftool.git@v0.0.1`
+`$ pip install git+https://github.com/duttad/mergepdfs.git@v0.1.1`
 
 #### after cloning the repo
 `$ git checkout tags/<tag> -b <tag>-branch`
