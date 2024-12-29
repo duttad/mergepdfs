@@ -9,6 +9,7 @@ class Docptr:
             self.docpath = docpath + ".pdf"
         else:
             self.docpath = docpath
+        print( self.docpath )
         self.start_page = start_page
         self.end_page = end_page
 
