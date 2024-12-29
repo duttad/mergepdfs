@@ -5,8 +5,10 @@ import typer
 
 class Docptr:
     def __init__(self, docpath: str, start_page: int, end_page: int):
-        if self.docpath[-4:] != ".pdf":
+        if docpath[-4:] != ".pdf":
             self.docpath = docpath + ".pdf"
+        else:
+            self.docpath = docpath
         self.start_page = start_page
         self.end_page = end_page
 
