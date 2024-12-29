@@ -10,3 +10,6 @@ venv/
 dist/
 build/
 *.egg-info/
+
+# local testing
+local_test/
