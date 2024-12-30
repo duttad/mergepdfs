@@ -5,10 +5,7 @@ import typer
 
 class Docptr:
     def __init__(self, docpath: str, start_page: int, end_page: int):
-        if ".pdf" not in docpath:
-            self.docpath = docpath + ".pdf"
-        else:
-            self.docpath = docpath
+        self.docpath = docpath        
         self.start_page = start_page
         self.end_page = end_page
 
@@ -22,9 +19,11 @@ class Merger:
         # Create a new PDF to store merged pages
         output_pdf = fitz.open()
 
-        for docptr in self.docptrs:
+        for docptr in self.docptrs:       
             try:
                 # Open the source PDF
+                if not ".pdf" in docptr.docpath:
+                    docptr.docpath += ".pdf"
                 source_pdf = fitz.open(docptr.docpath)
                 num_pages = source_pdf.page_count
                 if docptr.end_page == 0:
