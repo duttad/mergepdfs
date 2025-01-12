@@ -30,7 +30,7 @@ Make sure you are in the directory containing the pyproject.toml file and use pi
 
 
 ## Usage
-`$ mergepdfs merge doc1 start_page1 end_page1 doc2 start_page2 end_page2 doc3 start_page3 end_page3 doc1 start_page4 end_page4 doc2 start_page5 end_page5 ...`
+`$ mergepdfs merge doc_1 start_page_1 end_page_1 doc_2 start_page_2 end_page_2 doc_3 start_page_3 end_page_3 doc_1 start_page_4 end_page_4 doc_2 start_page_5 end_page_5 ...`
 
 `doc1, doc2,` etc. are the filenames of the pdf documents with or without the .pdf suffix.
 `end_page = 0` indicates end of the document.
