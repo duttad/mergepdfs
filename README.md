@@ -34,7 +34,7 @@ Make sure you are in the directory containing the pyproject.toml file and use pi
 
 `doc1, doc2,` etc. are the filenames of the pdf documents with or without the .pdf suffix.
 Page numbering is `1-based`. That is, the first page of the document has the page number `1`, etc. 
-The special page number `end_page = 0` indicates end of the document.
+The special page number `end_page = 0` indicates end of the document (last page).
 
 As in the example, pages from a document can appear in any order in the final merged document.
 
