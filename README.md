@@ -33,7 +33,8 @@ Make sure you are in the directory containing the pyproject.toml file and use pi
 `$ mergepdfs merge doc_1 start_page_1 end_page_1 doc_2 start_page_2 end_page_2 doc_3 start_page_3 end_page_3 doc_1 start_page_4 end_page_4 doc_2 start_page_5 end_page_5 ...`
 
 `doc1, doc2,` etc. are the filenames of the pdf documents with or without the .pdf suffix.
-`end_page = 0` indicates end of the document.
+Page numbering is `1-based`. That is, the first page of the document has the page number `1`, etc. 
+The special page number `end_page = 0` indicates end of the document.
 
 As in the example, pages from a document can appear in any order in the final merged document.
 
